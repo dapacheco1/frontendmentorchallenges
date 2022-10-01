@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Design System</title>
+    <!-- styles -->
+    <style>
+        .system-container{
+            width: 100%;
+            height: auto;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding:2.4rem;
+            gap: 1.6rem;
+        }
+        .system-container h1{
+            align-self: center;
+        }
+
+        .colors h2{
+            margin-top: 2.4rem;
+            margin-bottom: 2.4rem;
+        }
+        .color-style{
+            width: 10rem;
+            height: 10rem;
+            
+            border-radius: 50%;
+        }
+
+        .dark-sea{
+            background-color: var(--dark-sea);
+        }
+        .hard-white{
+            background-color:var(--hard-white);
+        }
+
+        .soft-gray{
+            background-color: var(--soft-gray);
+        }
+
+        .light-gray{
+            background-color: var(--light-gray);
+        }
+        
+        .gray{
+            background-color: var(--gray);
+        }
+
+        .soft-mint{
+            background-color: var(--soft-mint);
+        }
+
+        .hard-mint{
+            background-color: var(--hard-mint);
+        }
+
+        .soft-tomato{
+            background-color: var(--soft-tomato);
+        }
+
+        .palete{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem;
+            font-size: 1.6rem;
+        }
+
+        .color{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.6rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="system-container">
+        <h1>Design system</h1>
+        <section class="colors">
+            <h2>Colors</h2>
+            <div class="palete">
+                <div class="color">
+                    <div class="color-style dark-sea"></div>
+                    <span>Dark sea #053178</span>
+                </div>
+                <div class="color">
+                    <div class="color-style hard-white"></div>
+                    <span>Hard white #f8f8f8</span>
+                </div>
+                <div class="color">
+                    <div class="color-style soft-gray"></div>
+                    <span>Soft gray #a6abb6</span>
+                </div>
+                <div class="color">
+                    <div class="color-style light-gray"></div>
+                    <span>Light gray #e9e9e9</span>
+                </div>
+                <div class="color">
+                    <div class="color-style gray"></div>
+                    <span>Gray #747474</span>
+                </div>
+                <div class="color">
+                    <div class="color-style soft-mint"></div>
+                    <span>Soft mint #f6fafd</span>
+                </div>
+                <div class="color">
+                    <div class="color-style hard-mint"></div>
+                    <span>Hard Mint #d9ecfa</span>
+                </div>
+                <div class="color">
+                    <div class="color-style soft-tomato"></div>
+                    <span>Soft tomato #f7554d</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
