@@ -1,0 +1,133 @@
+:root{
+    --dark-sea: #053178;
+    --hard-white: #f8f8f8;
+    --soft-gray:#a6abb6;
+    --light-gray:#e9e9e9 ;
+    --gray: #747474;
+    --soft-mint:#f6fafd;
+    --hard-mint:#d9ecfa;
+    --soft-tomato: #f7554d;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    background-color: rgb(231, 231, 231);
+}
+
+body{
+    padding:1.6rem 1.2rem;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .header--notifications, header .header--number{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+header .header--number{
+    margin-left: 1.2rem;
+    padding:0 0.8rem;
+    background-color: var(--dark-sea);
+    color:var(--hard-white);
+    border-radius: 0.4rem;
+}
+
+header .header--actions{
+    margin-left: auto;
+    font-size:1.2rem;
+    font-weight: 400;
+    color:var(--gray);
+    cursor: pointer;
+}
+
+main{
+    position: relative;
+    margin-top:2.4rem;
+    display:flex;
+    flex-direction: column;
+    gap:1.6rem;
+    font-size: 1.2rem;
+}
+
+main .main--notifications-not-viewed, main .main--notifications-viewed{
+    display: flex;
+    flex-direction: row;
+    gap:0.8rem;
+    position: relative;
+    padding:0.8rem;
+    background-color: var(--soft-mint);
+    border-radius: 1.2rem;
+    cursor: pointer;
+    transition: all 150ms ease-in;   
+}
+
+main .main--notifications-not-viewed:hover, main .main--notifications-viewed:hover{
+    background-color: var(--hard-mint);
+}
+
+main .main--notifications-viewed{
+    background-color: var(--hard-white);
+}
+
+main .main--notifications-content .main--notifications-content-generic-text, 
+main .main--notifications-content .main--notifications-content-primary
+{
+    color: var(--gray);
+}
+
+main .main--notifications-content .main--notifications-content-primary{
+    font-weight: 700;
+}
+
+.main--notifications-content-status{
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: 0.4rem;
+    background-color: var(--soft-tomato);
+    border-radius: 50%;
+}
+
+main .main--notifications-content .main--notifications-content-generic-text-time{
+    color: var(--soft-gray);
+}
+
+main .main--notifications-avatar{
+    background-image: url('https://i.pravatar.cc/300');
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+main .main--notifications-picture{
+    background-image: url('https://i.pravatar.cc/300');
+    border-radius: 25%;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+main .main--notifications-content .main--notifications-content-group{
+    color:var(--dark-sea);
+    font-weight: 700;
+}
+
+.main--notifications-content-inbox-message{
+    border:0.1rem var(--light-gray) solid;
+    padding:1.6rem;
+    margin-top: 1.6rem;
+    border-radius:0.8rem;
+}
+
